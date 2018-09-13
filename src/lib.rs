@@ -262,13 +262,13 @@ mod tests {
 
     #[test]
     fn get_interface_id() {
-        assert!(interface_id("enp4s0").is_ok());
+        assert!(interface_id("eth0").is_ok());
     }
 
     #[test]
     fn test_adding_to_bridge() {
         assert!(create_bridge("hello_br1").is_ok());
-        assert!(add_interface_to_bridge(interface_id("enp4s0").unwrap(),
+        assert!(add_interface_to_bridge(interface_id("eth0").unwrap(),
                     "hello_br1").is_ok());
         assert!(delete_bridge("hello_br1").is_ok());
     }
