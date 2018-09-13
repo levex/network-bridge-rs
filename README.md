@@ -1,4 +1,4 @@
-# network-bridge
+# network-bridge [![Build Status](https://travis-ci.org/levex/network-bridge-rs.svg?branch=master)](https://travis-ci.org/levex/network-bridge-rs)
 Rust crate (library) for managing network bridges on Linux.
 
 # Disclaimer
