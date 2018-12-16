@@ -6,7 +6,6 @@ Rust crate (library) for creating and managing network bridges on Linux.
 One can create a bridge using a simple builder pattern:
 
 ```rust
-extern crate network_bridge;
 use network_bridge::BridgeBuilder;
 
 let bridge = BridgeBuilder::new("bridge_name")
@@ -17,6 +16,8 @@ let bridge = BridgeBuilder::new("bridge_name")
 
 In the future, one will be able to set more properties of the bridge using this
 crate.
+
+(Note that if using Rust 2015, an `extern crate` declaration is required.)
 
 # Disclaimer
 
