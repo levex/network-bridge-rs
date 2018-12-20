@@ -31,8 +31,8 @@ mod private {
     ioctl_write_ptr_bad!(ioctl_addif, SIOCBRADDIF, ifreq);
     ioctl_write_ptr_bad!(ioctl_delif, SIOCBRDELIF, ifreq);
 }
-use private::{ifreq, ioctl_addif, ioctl_delif, ioctl_ifindex, ioctl_delbr, ioctl_addbr};
-pub use private::IFNAMSIZ;
+use crate::private::{ifreq, ioctl_addif, ioctl_delif, ioctl_ifindex, ioctl_delbr, ioctl_addbr};
+pub use crate::private::IFNAMSIZ;
 
 /// Builder pattern for constructing networking bridges.
 ///
@@ -252,7 +252,7 @@ pub fn delete_interface_from_bridge(interface_id: i32, bridge: &str)
 
 #[cfg(test)]
 mod tests {
-    use {create_bridge, delete_bridge, interface_id, add_interface_to_bridge};
+    use crate::{create_bridge, delete_bridge, interface_id, add_interface_to_bridge};
 
     #[test]
     fn add_and_delete_bridge() {
