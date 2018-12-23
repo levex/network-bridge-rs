@@ -6,7 +6,7 @@ keywords = ["linux", "network", "networking", "bridge", "bridges"]
 categories = ["os", "api-bindings", "os::unix-apis", "network-programming"]
 license = "MIT OR Apache-2.0"
 readme = "README.md"
-version = "0.1.1"
+version = "0.1.2-alpha.0"
 edition = "2018"
 authors = ["Levente Kurusa <lkurusa@acm.org>"]
 
